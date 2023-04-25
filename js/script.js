@@ -55,31 +55,31 @@
 // const btnHtml = document.getElementById('btn-html');
 // const btnCss = document.getElementById('btn-css');
 // let text = document.createElement('p');
+// textHtml =
+//   'HTML - це HyperText Markup Language — мова розмітки гіпертексту стандартизована мова розмітки документів для перегляду вебсторінок у браузері.';
+// textCss =
+//   'CSS (абревіатура від Cascading Style Sheets, що в перекладі означає каскадні таблиці стилів) - це спеціальна мова (мова стилів), за допомогою якої описують вигляду документів (як і де відображати елементи веб-сторінки), написаних мовами розмітки даних. Найчастіше CSS використовується для документів, котрі розмічені мовою HTML, XHTML та XML.';
 
 // Варіант №1 з двома функціями (окрема для кожної кнопки)
 
-// btnHtml.addEventListener('click', function () {
-//   text.innerText =
-//     'HTML - це HyperText Markup Language — мова розмітки гіпертексту стандартизована мова розмітки документів для перегляду вебсторінок у браузері.';
+// btnHtml.addEventListener('click', () => {
+//   text.innerText = textHtml;
 //   divBtns.appendChild(text);
 // });
 
-// btnCss.addEventListener('click', function () {
-//   text.innerText =
-//     'CSS (абревіатура від Cascading Style Sheets, що в перекладі означає каскадні таблиці стилів) - це спеціальна мова (мова стилів), за допомогою якої описують вигляду документів (як і де відображати елементи веб-сторінки), написаних мовами розмітки даних. Найчастіше CSS використовується для документів, котрі розмічені мовою HTML, XHTML та XML.';
+// btnCss.addEventListener('click', () => {
+//   text.innerText = textCss;
 //   divBtns.appendChild(text);
 // });
 
 // Варіант №2 з однією функцією та умовою if
 
 // function showInfo(selector) {
-//   selector.addEventListener('click', function () {
+//   selector.addEventListener('click', () => {
 //     if (selector === btnHtml) {
-//       text.innerText =
-//         'HTML - це HyperText Markup Language — мова розмітки гіпертексту стандартизована мова розмітки документів для перегляду вебсторінок у браузері.';
+//       text.innerText = textHtml;
 //     } else if (selector === btnCss) {
-//       text.innerText =
-//         'CSS (абревіатура від Cascading Style Sheets, що в перекладі означає каскадні таблиці стилів) - це спеціальна мова (мова стилів), за допомогою якої описують вигляду документів (як і де відображати елементи веб-сторінки), написаних мовами розмітки даних. Найчастіше CSS використовується для документів, котрі розмічені мовою HTML, XHTML та XML.';
+//       text.innerText = textCss;
 //     }
 //     divBtns.appendChild(text);
 //   });
